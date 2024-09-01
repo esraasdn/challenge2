@@ -1,0 +1,367 @@
+/*
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    height: 700px;
+    margin: auto;
+    position: relative;
+}
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width:max-content ;
+    transition: 1s;
+}
+.list img{
+    width: 1300px;
+    max-width: 100vw;
+    height: 100%;
+    object-fit: cover;  
+}
+.buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width:90%;
+    display:flex ;
+    justify-content:space-between;
+}
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#fff5;
+    color:#fff;
+    border:none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color:#fff
+    left : 0;
+    width: 100%;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+}
+.dots li {
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+}
+.dots li.active{
+    width:30px;
+}
+    */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#F6F5FC ;
+    font-family: "Roboto", sans-serif;
+    height: 100%;
+    margin: 0;
+    padding:0;
+    place-items: center;
+    
+}
+.rightside{
+    
+    width: 250px;
+    height: 100vh; 
+    background-color: #202068;
+    color: white;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    padding: 20px;
+    overflow-y: auto;
+}
+.logo {
+    margin-top:300px;
+    margin-bottom: 20px; 
+    background: #202068;
+}
+
+.logo img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.form {
+    width: 98%;
+    max-width: 400px;
+    margin-left:20%;
+    margin-top:10%;
+}
+    
+.form .header{
+    text-align: center;
+    padding:20px ;
+    display: grid;
+    gap: 5px;
+}
+    
+.form .header p {
+    color: #555;
+}
+    /*
+.form .body {
+    box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    height: 320px;
+}
+    */
+
+.form .body .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px; 
+}
+.form .body .pagination .number {
+    width:28px ;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50px;
+    background: #202068;
+    color:#fff;
+    font-size: 15px;
+}
+
+.form .body .pagination .bar{
+    width: 50px;
+    height: 4px;
+    background: #202068;
+    border-radius: 5px;
+} 
+
+.form .body .pagination .active ~div {
+   background: rgb(208, 207, 219);
+   color: #111; 
+}
+
+
+.form .steps {
+    width: 400%;
+    display: flex;
+}
+
+   
+.form .steps .step1 {
+    width: 98vw ;
+    max-width: 600px;
+    padding: 10px 20px 20px;
+    overflow: hidden;
+    
+}
+.form .steps .step2 {
+    width: 98vw ;
+    max-width: 600px;
+    padding: 10px 20px 20px;
+    overflow: hidden;
+    
+}
+.form .steps .step3 {
+    width: 98vw ;
+    max-width: 600px;
+    padding: 10px 20px 20px;
+    overflow: hidden;
+    
+}
+.form .steps .step4 {
+    width: 98vw ;
+    max-width: 600px;
+    padding: 10px 20px 20px;
+    overflow: hidden;
+    
+}
+.form .steps .step1 h4 {
+    margin-bottom: 5px;
+}
+.form .steps .step2 h4 {
+    margin-bottom: 5px;
+}
+.form .steps .step3 h4 {
+    margin-bottom: 5px;
+}
+.form .steps .step4 h4 {
+    margin-bottom: 5px;
+}
+    
+    
+    
+ 
+/*
+.form .steps .step p {
+    color: #555;
+    max-width:90% ;
+    font-size: 15px;
+}
+    */
+
+.form .steps .step1 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top:20px ;
+    
+}
+.form .steps .step2 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top:20px ;
+} 
+
+.form .steps .step1 .grid .col label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.form .steps .step2 .grid .col1 label  {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.form .steps .step2 .grid .col2 label  {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.form .steps .step2 .grid .col3 label  {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+.form .steps .step2 .grid .col4 label  {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.form .steps .step1 .grid .col input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb ;
+    font-size: 15px;
+    border-radius:8px ;
+    font-size: 15px;
+    border-radius: 8px; 
+}
+
+.form .steps .step2 .grid .col1 input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb ;
+    font-size: 15px;
+    border-radius:8px ;
+    font-size: 15px;
+    border-radius: 8px; 
+}
+.form .steps .step2 .grid .col2 input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb ;
+    font-size: 15px;
+    border-radius:8px ;
+    font-size: 15px;
+    border-radius: 8px; 
+}
+
+.form .steps .step2 .grid .checkbox-grade  {
+    
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb ;
+    font-size: 15px;
+    border-radius:8px ;
+    font-size: 15px;
+    border-radius: 8px; 
+    display: flex;  
+}
+    
+
+.form .steps .step2 .grid .col4 .languages{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb ;
+    font-size: 15px;
+    border-radius:8px ;
+    font-size: 15px;
+    border-radius: 8px; 
+}
+.form .steps .step2 .grid .col4 .languages .rate{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.form .steps .step3 .grid .col .thedepartement {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb ;
+    font-size: 15px;
+    border-radius:8px ;
+    font-size: 15px;
+    border-radius: 8px; 
+}
+
+
+
+.form .steps .step4 .grid .col textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bbb ;
+    font-size: 15px;
+    border-radius:8px ;
+    font-size: 15px;
+    border-radius: 8px; 
+   
+}
+ button  {
+    /*
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #202068;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+*/
+    background-color: #202068;
+    color:#fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none ;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: center;
+
+}
+button:hover {
+    background-color: #fff;
+  color: #202068;
+  border: 10 px , solid #202068;
+}
+
+  
